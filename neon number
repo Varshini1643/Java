@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class neon{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a= sc.nextInt();
+        int square,res=0;
+        square=a*a;
+
+        while(square>0){
+            int r= square%10;
+            res= res+r;
+            square=square/10;
+        }
+        if(a==res)
+        System.out.println("neon");
+        else
+        System.out.println("non neon");
+        
+       sc.close();
+    }
+}
